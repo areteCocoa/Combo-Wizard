@@ -21,11 +21,13 @@
 			margin: auto;
 		}
 	</style>
-
+	<meta name="viewport" content="width=device-width; 
+	initial-scale=1; maximum-scale=1; user-scalable=0;"/>
 	<script type="text/javascript" src="lib/impact/impact.js"></script>
 	<script type="text/javascript" src="lib/game/main.js"></script>
 </head>
-<body>
+<body onload="setTimeout(function(){window.scrollTo(0,0);},1);">
+
 	<canvas id="canvas"></canvas>
 </body>
 </html>
