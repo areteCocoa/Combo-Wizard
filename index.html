@@ -20,6 +20,29 @@
 			bottom: 0;
 			margin: auto;
 		}
+		#leftinstructions{
+			font-size: 8pt;
+			width: 175px;
+			margin: 20px 0px 0px 20px;
+		}
+		#q{
+			background: url('media/elements.png') no-repeat -1px 0;
+			width: 9px;
+			height: 10px;
+			display: inline-block;
+		}
+		#w{
+			background: url('media/elements.png') no-repeat -12px 0;
+			width: 9px;
+			height: 10px;
+			display: inline-block;
+		}
+		#e{
+			background: url('media/elements.png') no-repeat -22px 0;
+			width: 9px;
+			height: 10px;
+			display: inline-block;
+		}
 	</style>
 	<meta name="viewport" content="width=device-width, 
 	initial-scale=1, maximum-scale=1, user-scalable=0"/>
@@ -27,7 +50,16 @@
 	<script type="text/javascript" src="lib/game/main.js"></script>
 </head>
 <body onload="setTimeout(function(){window.scrollTo(0,0);},1);">
-
+	<div id = "leftinstructions">
+		Use your arrow keys to move!
+		<img src="media/arrowkeys.png"><br />
+		Use these elements and then press R to activate a spell!<br />
+		<div id="q" ></div> - (Q) Fire<br />
+		<div id="w" ></div> - (W) Water<br />
+		<div id="e" ></div> - (E) Earth<br />
+		Spend your XP by clicking upgrades in the bottom right! Combine elements for new spells!
+		
+	</div>
 	<canvas id="canvas"></canvas>
 </body>
 </html>
